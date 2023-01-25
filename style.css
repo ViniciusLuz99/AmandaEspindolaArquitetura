@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+:root{
+    /* Cores */
+    --maincolor: #6C3137;
+    --secondary-color: #333;
+    --dourado: #C2966B;
+    --BrancoPadrao: #fff;
+
+    /* Fontes */
+    --primary-font: 'Open Sans', sans-serif;
+    --secondary-font: "Bebas Neue", cursive;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to bottom, #4b1218, var(--maincolor));
+    color: var(--BrancoPadrao);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    padding: 10px;
+    color: var(--dourado);
+    text-decoration: none;
+    transition: color 0.8s ease-in-out;
+}
+
+nav a:hover{
+    background-color: var(--secondary-color);
+    color: var(--BrancoPadrao);
+    padding-bottom: 19px;
+    padding-top: 19px;
+    opacity: 0.7;
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: var(--BrancoPadrao);
+    text-decoration: none;
+}
+
+
+/*Imagem central*/
+.main-image {
+    height: 100vh; /* Set the container to take up 100% of the viewport height */
+    width: 100%; /* Set the container to take up 100% of the viewport width */
+    position: relative; /* Position the container relatively so the image can be positioned absolutely */
+    overflow: hidden; /* Hide any overflow of the image */
+    background-image: url("/ImagensNF/projetoFantasia01.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-image img {
+    position: absolute; /* Position the image absolutely so it takes up the entire container */
+    top: 0; /* Align the top of the image with the top of the container */
+    left: 0; /* Align the left of the image with the left of the container */
+    width: 100%; /* Set the width of the image to 100% so it takes up the entire container width */
+    height: 90%; /* Set the height of the image to 100% so it takes up the entire container height */
+    object-fit: cover; /* Scale the image to cover the entire container, preserving its aspect ratio */
+}
+
+.main-image, .main-container {
+    box-sizing: border-box;
+}
+/*Ródapé*/
+footer {
+    background-color: var(--secondary-color);
+    color: var(--BrancoPadrao);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
