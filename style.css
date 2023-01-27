@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@media (max-width: 768px) { 
+    p {
+        font-size: 1em; 
+    }
+}
+
+
+
+
 
 :root{
     /* Cores */
@@ -13,7 +22,7 @@
     
 
     /* Fontes */
-    --primary-font: 'Open Sans', sans-serif;
+    --primary-font: 'Montserrat', sans-serif;
     --secondary-font: "Bebas Neue", cursive;
 }
 
@@ -28,17 +37,21 @@ body {
     font-family: var(--primary-font);
     margin: 0;
     padding: 0;
-    background-color: #3a191d;
+    background-color: #242424;
+    background-image: linear-gradient( #444, #222);
 }
 
 /* Header */
 header {
-    background-color: var(--maincolor);
+    position: relative;
+    background-color: rgb(223, 223, 223);
+    background-image: linear-gradient( #ccc, #cfcfcf);
     color: var(--BrancoPadrao);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    
 }
 
 /* Navegação*/
@@ -46,12 +59,18 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+    text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.425),1px 1px 2px var(--maincolor);
+    
+    
+    
 }
 
 nav a {
     padding: 0.9em;
     text-decoration: none;
     transition: 0.3s ease-in-out;
+    
 
 }
 
@@ -102,40 +121,82 @@ nav.navbar ul li a {
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 20px;
-    background-color: var(--BrancoPadrao);
+    color: var(--BrancoPadrao);
+    background-image: linear-gradient(var(--maincolor), #411c20);
+    
+    
 }
 
 
 .main h2 {
+    display: block;
+    padding: 5px;
+    color: var(--dourado);
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.3em;
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.425);
 }
 
-.main p {
-    font-size: 1rem;
+.main p{
+    text-indent: 1em;
+    font-size: 1.2em;
     text-align: justify;
-    padding: 5px;
-    margin-right: 30px;
-    margin-left: 30px;
+    max-width: 900px;
+    padding: 6px;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-top: 1em;
+    text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.425);
+}
+
+.main ul {
+    font-size: 1.1em;
+    
+    
+}
+
+.main li {
+    text-indent: 0.4em;
+    padding: 0.5em;
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1em;
+    max-width: 800px;
 }
 
 .main span {
     text-align: center;
     display: block;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: bold;
     padding-bottom: 20px;
+    padding-top: 20px;
+    background-image: linear-gradient( #333333, #222);
+    text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.425);
+    margin-bottom: 40px;
 }
 
 .main span a {
     text-decoration: none;
     color: var(--dourado);
 }
+
+#contatobox {
+    display: block;
+    background-color: var(--dark-gray-color);
+    margin-top: 25px;
+    padding: 40px;
+}
+
 .main span a:hover{
     text-decoration: underline;
 }
+
+/*Portfólio*/
 
 .portfolio{
     display: flex;
@@ -146,11 +207,11 @@ nav.navbar ul li a {
     margin-top: 0px;
     padding: 20px;
     background-color: var(--light-gray-color);
+    text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.24);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.212);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-image: linear-gradient(var(--maincolor), #5e2a2f);
-    color: var(--BrancoPadrao);
+    color: var(--dark-gray-color)
     
 }
 
@@ -161,7 +222,7 @@ nav.navbar ul li a {
 }
 
 .portfolio p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -170,24 +231,85 @@ nav.navbar ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .portfolio-image {
     width: 25%;
     margin: 0.5rem;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
 }
+ 
+  .portfolio img:hover {
+    transform: scale(1.9);
+    cursor: zoom-in;
+    box-shadow: 0px 1px 15px var(--maincolor);
+  }
+
+/*Contato*/
+.cardcontato {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 90vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+    background-image: linear-gradient( #411c20,var(--maincolor),#411c20);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 5px auto;
+    
+  }
+
+.cardfoto {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    margin: 5px auto;
+  }
+
+.cardcontato h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--dourado);
+}
+
+.cardcontato p {
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--BrancoPadrao);
+    margin-bottom: 10px;
+}
+
+.redes {
+    margin: 10px auto;
+
+    
+}
+
 
 /*Imagem central*/
 .main-image {
-    height: 50vh; /* Set the container to take up 100% of the viewport height */
-    width: 100%; /* Set the container to take up 100% of the viewport width */
-    position: relative; /* Position the container relatively so the image can be positioned absolutely */
-    overflow: hidden; /* Hide any overflow of the image */
+    height: 60vh;
+    width: 100%; 
+    position: relative; 
+    overflow: hidden; 
     background-image: url("/ImagensNF/projetoFantasia01.jpg");
     background-size: cover;
     background-position: center;
 }
-
 
 .main-image img {
     position: absolute; /* Position the image absolutely so it takes up the entire container */
