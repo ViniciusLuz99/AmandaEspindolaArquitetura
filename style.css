@@ -7,14 +7,17 @@
 
 
 
-
+@font-face {
+    font-family: 'Adam Medium';
+    src: url(./Fontes/Adam-Medium.ttf) format('truetype');
+  }
 
 :root{
     /* Cores */
-    --maincolor: #672d33;
+    --maincolor: #6b3136;
     --accent-color: rgb(155, 78, 63);
     --secondary-color: #333;
-    --dourado: rgb(230, 161, 50);
+    --dourado: #d3af37;
     --BrancoPadrao: #fff;
     --light-gray-color: #dfdfdf;
     --dark-gray-color: #333333;
@@ -24,6 +27,7 @@
     /* Fontes */
     --primary-font: 'Montserrat', sans-serif;
     --secondary-font: "Bebas Neue", cursive;
+    --logo-font: "Adam Medium";
 }
 
 /* Reset */
@@ -279,22 +283,45 @@ nav.navbar ul li a {
     margin: 5px auto;
   }
 
-.cardcontato h3 {
-    font-size: 2em;
+.cardcontato h3, h4, h5{
+    font-family: var(--logo-font);
+    font-size: 3em;
+    background: -webkit-linear-gradient(150deg, var(--dourado), #e9e8b3, var(--dourado));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     text-align: center;
+    text-transform: uppercase;
     margin-bottom: 10px;
     color: var(--dourado);
+}
+
+.cardcontato h4{
+    font-size: 2.2em;
+    background: -webkit-linear-gradient(020deg, var(--dourado), #e9e8b3, var(--dourado));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.cardcontato h5 {
+    font-weight: lighter;
+    font-size: 1.6em;
+    font-family: 'Segoe UI', sans-serif;
+
 }
 
 .cardcontato p {
     font-size: 1.3em;
     text-align: center;
-    color: var(--BrancoPadrao);
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.418);
     margin-bottom: 10px;
+    color: var(--BrancoPadrao);
 }
 
 .redes {
     margin: 10px auto;
+    
 
     
 }
@@ -306,18 +333,18 @@ nav.navbar ul li a {
     width: 100%; 
     position: relative; 
     overflow: hidden; 
-    background-image: url("./ImagensNF/projetoFantasia01.jpg");
+    background-image: url("./ImagensNF/projetoFantasia02.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .main-image img {
-    position: absolute; /* Position the image absolutely so it takes up the entire container */
-    top: 0; /* Align the top of the image with the top of the container */
-    left: 0; /* Align the left of the image with the left of the container */
-    width: 100%; /* Set the width of the image to 100% so it takes up the entire container width */
-    height: 90%; /* Set the height of the image to 100% so it takes up the entire container height */
-    object-fit: cover; /* Scale the image to cover the entire container, preserving its aspect ratio */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 90%;
+    object-fit: cover; 
 }
 
 .main-image, .main-container {
