@@ -1,33 +1,29 @@
 @charset "UTF-8";
-@media only screen and (max-width: 767px) {
-    .main p {
-    font-size: 1em;
-    line-height: 1.3;
-    text-align: justify;
-    margin: 0.5em auto;
-    }
-    }
- @media only screen and (max-width: 767px) {
-        header {
-            padding: 10px;
-            font-size: 0.8em;
-        }
-        
-        header span {
-            font-size: 1.2em;
-        }
-        
-        nav a {
-            padding: 0.5em;
-            font-size: 0.8em;
-        }
-    }
-
-
 @font-face {
     font-family: 'Adam Medium';
     src: url(./Fontes/Adam-Medium.ttf) format('truetype');
   }
+ /*Desktop*/
+ @media only screen and (min-width: 768px) {
+    .main-container {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    header span{
+      font-size: 2.5em;
+    }
+    
+    nav a {
+      font-size: 1.2em;
+    }
+
+    nav h1 {
+        font-size: 3.0em;
+        
+    }
+  }
+
 
 :root{
     /* Cores */
@@ -58,23 +54,49 @@ body {
     font-family: var(--primary-font);
     margin: 0;
     padding: 0;
+    width: 100%;
     background-image: linear-gradient(to bottom, #E9EAE1, #a8a8a86e, #E9EAE1);
+}
+
+/*Imagem central*/
+.main-image {
+    height: 65vh;
+    width: 100%; 
+    position: relative; 
+    overflow: hidden; 
+    
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.main-image img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+.main-image, .main-container {
+    box-sizing: border-box;
 }
 
 /* Navegação*/
 header {
+    font-size: 0.8em;
     position: relative;
-    background-color: rgb(197, 197, 197);
     background-image: linear-gradient(to right, var(--maincolor), #9c464d, var(--maincolor));
     color: var(--BrancoPadrao);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    align-items: stretch;
+    justify-content: center;
+    padding: 10px;
     
 }
 
-header span{
+header h1{
     font-family: var(--logo-font);
     color: var(--dourado);
     background: -webkit-linear-gradient(150deg, var(--dourado), #e9e8b3, var(--dourado));
@@ -82,7 +104,7 @@ header span{
     -webkit-background-clip: text;
     background-clip: text;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5rem;
     text-transform: uppercase;
     margin: auto 1em;
     margin-left: 0px;
@@ -90,16 +112,21 @@ header span{
 
 }
 
-nav {
+.navbar {
     display: flex;
+    
     align-items: center;
     justify-content: center;
+    top: 0;
+    width: 100%;
     font-weight: bold;
-    text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.24);
-    
-    
-    
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--maincolor), #9c464d, var(--maincolor));
+    text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.24);            
 }
+.header:not(:first-child) .navbar {
+    background-color: white;
+  }
 
 nav a {
     font-size: 1.0em;
@@ -109,6 +136,7 @@ nav a {
     text-decoration: none; 
     transition: 0.3s ease-in-out;
     text-transform: uppercase; 
+    
     
 }
 
@@ -124,18 +152,11 @@ nav a:hover{
     transform: scale(1.2);
     transition: 0.3s ease-in-out;
 }
-nav.navbar {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    
-}
 
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
   
 
@@ -149,9 +170,9 @@ header nav ul {
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 20px;
+    padding: 30px 20px 50px 20px;
     color: var(--BrancoPadrao);
-    background-image: linear-gradient(var(--maincolor), #411c20);
+    background-image: linear-gradient(#522328, var(--maincolor), #411c20);
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     
@@ -159,21 +180,19 @@ header nav ul {
 }
 
 .main h2 {
-    display: block;
-    padding: 5px;
-    color: var(--dourado);
-    text-align: center;
     font-size: 2.3em;
+    color: var(--dourado);
+    padding: 5px;
+    text-align: center;
     margin-bottom: 10px;
     text-transform: uppercase;
     text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.425);
 }
 
 .main p{
-    text-indent: 5px;
+    text-indent: 1px;
     font-size: 1.2em;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     letter-spacing: 0.05em;
     line-height: 1.5em;
     max-width: 900px;
@@ -209,13 +228,13 @@ header nav ul {
 }
 
 .main span:hover {
- box-shadow: 1px 2px 20px var(--accent-color);
+ box-shadow: 0px -1px 10px var(--BrancoPadrao);
+ color: var(--dourado);
 
 }
 
 #contatobox {
     display: block;
-    background-color: var(--dark-gray-color);
     margin: 2em auto;
     padding: 0.8em;
 }
@@ -231,7 +250,7 @@ header nav ul {
     margin: 0 auto;
     text-align: center;
     margin-top: 0px;
-    padding: 20px;
+    padding: 30px 20px 50px 20px;
     background-color: var(--light-gray-color);
     text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.24);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.212);
@@ -243,6 +262,7 @@ header nav ul {
 
 .portfolio h3 {
     font-size: 2.3rem;
+    margin-top: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -261,7 +281,10 @@ header nav ul {
 }
 
 .portfolio-image {
-    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
     margin: 0.5rem;
     height: auto;
     transition: transform 0.3s ease-in-out;
@@ -270,6 +293,7 @@ header nav ul {
  
   .portfolio img:hover {
     transform: scale(1.9);
+    transition: 0.3s ease-in-out;
     cursor: zoom-in;
     box-shadow: 0px 1px 15px var(--maincolor);
   }
@@ -279,6 +303,7 @@ header nav ul {
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
+    justify-content: center;
     margin: auto;
     margin-top: 80px;
     padding: 30px;
@@ -294,15 +319,18 @@ header nav ul {
     padding: 30px;
     margin: 5px auto;
     
+    
   }
 
 .cardfoto {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 900px;
     border-radius: 30px;
     margin: 5px auto;
+    
   }
 
 .cardcontato h3, h4, h5{
@@ -333,52 +361,22 @@ header nav ul {
 
 }
 
-.cardcontato p {
-    font-size: 1.3em;
+.cardcontato p, a{
+    font-size: 0.9em;
     text-align: center;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.418);
     margin-bottom: 10px;
     color: var(--BrancoPadrao);
+    text-decoration: none;
 }
 
-.redes {
-    margin: 10px auto;
-    
-
-    
-}
-
-
-/*Imagem central*/
-.main-image {
-    height: 60vh;
-    width: 100%; 
-    position: relative; 
-    overflow: hidden; 
-    background-image: url("./ImagensNF/projetoFantasia02.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.main-image img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 90%;
-    object-fit: cover; 
-}
-
-.main-image, .main-container {
-    box-sizing: border-box;
-}
 /*Ródapé*/
 footer {
     background-color: var(--dark-gray-color);
     color: var(--BrancoPadrao);
     text-align: center;
     margin-top: 8em;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;

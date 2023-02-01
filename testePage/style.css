@@ -39,6 +39,7 @@ body {
       background-image: url("../ImagensNF/projetoFantasia02.jpg");
       background-size: cover;
       height: 100vh;
+      width: 100vw;
       display: flex;
       align-items: stretch;
       justify-content: center;
@@ -77,15 +78,14 @@ body {
     }
 
     .navbar {
-      font-weight: bold;
       display: flex;
-      background-color: rgb(255, 255, 255);
       position: fixed;
+      justify-content: center;
       top: 0;
       width: 100%;
-      display: flex;
-      justify-content: center;
+      font-weight: bold;
       padding: 20px;
+      background-color: rgb(255, 255, 255);
     }
 
     nav a {
