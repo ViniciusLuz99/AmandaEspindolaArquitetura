@@ -3,26 +3,7 @@
     font-family: 'Adam Medium';
     src: url(./Fontes/Adam-Medium.ttf) format('truetype');
   }
- /*Desktop*/
- @media only screen and (min-width: 768px) {
-    .main-container {
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    header span{
-      font-size: 2.5em;
-    }
-    
-    nav a {
-      font-size: 1.2em;
-    }
 
-    nav h1 {
-        font-size: 3.0em;
-        
-    }
-  }
 
 
 :root{
@@ -60,7 +41,7 @@ body {
 
 /*Imagem central*/
 .main-image {
-    height: 65vh;
+    height: 35vh;
     width: 100%; 
     position: relative; 
     overflow: hidden; 
@@ -116,7 +97,7 @@ header h1{
     display: flex;
     
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     top: 0;
     width: 100%;
     font-weight: bold;
@@ -308,9 +289,19 @@ header nav ul {
     margin-top: 80px;
     padding: 30px;
     border-radius: 20px;
-    max-width: 90vw;
+    max-width: 100vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
     background-image: linear-gradient( #411c20,var(--maincolor),#411c20);
+}
+
+.whatsapp:hover {
+    color: #25d366;
+}
+.instagram:hover{
+    color: #e63283 ;
+}
+.email:hover{
+    color: rgb(50, 168, 236);
 }
 
 .info {
@@ -365,6 +356,7 @@ header nav ul {
     font-size: 0.9em;
     text-align: center;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.418);
+    margin-top: 0.5em;
     margin-bottom: 10px;
     color: var(--BrancoPadrao);
     text-decoration: none;
@@ -381,3 +373,53 @@ footer {
     align-items: center;
     justify-content: center;
   }
+
+   /*Desktop*/
+ @media only screen and (min-width: 770px) {
+    .main-image {
+        height: 70vh;
+        width: 100%;
+    }
+    
+    .main-container {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    header nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    header span{
+      font-size: 2.5em;
+    }
+    
+    nav a {
+      font-size: 1.2em;
+    }
+
+    nav h1 {
+        font-size: 3.0em;
+        
+    }
+
+    .cardcontato{
+        width: 90vw;
+    }
+
+}
+
+ /*Desktop*/
+ @media only screen and (min-width: 1658px) {
+    .main-image {
+        height: 80vh;
+        width: 100%;
+    }
+    
+    .cardcontato{
+        height: ;
+        width: 60vw;
+    }
+
+}
