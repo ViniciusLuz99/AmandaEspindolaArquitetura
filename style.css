@@ -9,9 +9,9 @@
 :root{
     /* Cores */
     --maincolor: #6b3136;
-    --accent-color: #9b4e3f
+    --accent-color: #9b4e3f;
     --secondary-color: #E9EAE1;
-    --dourado: #d3af37;
+    --dourado: #d1b351;
     --BrancoPadrao: #fff;
     --light-gray-color: #dfdfdf;
     --dark-gray-color: #333333;
@@ -295,14 +295,24 @@ header nav ul {
 }
 
 .whatsapp:hover {
-    color: #25d366;
+    background-image: linear-gradient(to right, #25d366,#0c9b70);
+    color: var(--BrancoPadrao);
+    border-radius: 20px;
+    padding: 5px;
 }
 .instagram:hover{
-    color: #e63283 ;
+    background-image: linear-gradient(to right,#e63283 ,#b61b61);
+    color: var(--BrancoPadrao);
+    border-radius: 20px;
+    padding: 5px;
 }
 .email:hover{
-    color: rgb(50, 168, 236);
+    background-color: rgb(50, 168, 236);
+    color: var(--BrancoPadrao);
+    border-radius: 20px;
+    padding: 5px;
 }
+
 
 .info {
     display: flex;
@@ -411,14 +421,25 @@ footer {
 }
 
  /*Desktop*/
- @media only screen and (min-width: 1658px) {
+ @media only screen and (min-width: 1358px) {
     .main-image {
         height: 80vh;
         width: 100%;
     }
     
+    .portfolio-image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 25%;
+        margin: 0.5rem;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+    }
+
     .cardcontato{
-        height: ;
+
         width: 60vw;
     }
 
