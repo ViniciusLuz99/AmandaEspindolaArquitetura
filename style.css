@@ -95,7 +95,6 @@ header h1{
 
 .navbar {
     display: flex;
-    
     align-items: center;
     justify-content: space-between;
     top: 0;
@@ -112,7 +111,6 @@ header h1{
 nav a {
     font-size: 1.0em;
     padding: 0.9em;
-    text-decoration: none;
     color: #222;
     text-decoration: none; 
     transition: 0.3s ease-in-out;
