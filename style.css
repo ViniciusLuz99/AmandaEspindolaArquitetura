@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Adam Medium';
-    src: url(../Fontes/Adam-Medium.ttf) format('truetype');
+    src: url(./Fontes/Adam-Medium.ttf) format('truetype');
   }
 
 
@@ -32,6 +32,7 @@
 }
 
 body {
+    transition: 0.3s ease-in-out;
     font-family: var(--primary-font);
     margin: 0;
     padding: 0;
@@ -313,6 +314,7 @@ header h1{
     color: var(--BrancoPadrao);
     border-radius: 20px;
     padding: 5px;
+    transition: 0.3s ease-in-out;
 }
 .instagram:hover{
     background-image: linear-gradient(to right,#e63283 ,#b61b61);
@@ -329,6 +331,7 @@ header h1{
 
 
 .info {
+    
     display: flex;
     flex-direction: column;
     padding: 30px;
