@@ -261,6 +261,7 @@ header h1{
 }
 
 .portfolio h3 {
+
     font-size: 2.3rem;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -273,6 +274,39 @@ header h1{
     margin-bottom: 20px;
 }
 
+.portfolio-image{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out
+    
+  }
+
+  .portfolio-image iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  } 
+  iframe:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 1px 15px var(--maincolor);
+  }
+
+  iframe {
+    margin: 0.5em;
+    border-radius: 10px;
+    width: 20rem;
+    height: 30em;
+    
+  }
+
+/*
 .portfolio-images {
     display: flex;
     flex-wrap: wrap;
@@ -288,16 +322,32 @@ header h1{
     margin: 0.5rem;
     height: auto;
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
 }
+
  
-  .portfolio img:hover {
-    transform: scale(1.9);
-    transition: 0.3s ease-in-out;
-    cursor: zoom-in;
-    box-shadow: 0px 1px 15px var(--maincolor);
+ 
+
+
+  .video-iframe {
+    position: relative;
+    overflow: hidden;
+    width: 84%;
+    padding-top: 100.25%;
+    margin: 6%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
   }
 
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  */
 /*Contato*/
 .cardcontato {
     display: flex;
@@ -448,6 +498,24 @@ footer {
         width: 90vw;
     }
 
+
+    .portfolio-image {
+     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 12%;
+    margin-right: 12%;
+
+    }
+
+
+      iframe {
+        margin: 0.5em;
+        border-radius: 10px;
+        width: 30rem;
+        height: 30em;  
+      }
 }
 
  /*Desktop*/
@@ -456,7 +524,7 @@ footer {
         height: 80vh;
         width: 100%;
     }
-    
+   /* 
     .portfolio-image {
         display: flex;
         flex-wrap: wrap;
@@ -467,7 +535,7 @@ footer {
         transition: transform 0.3s ease-in-out;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
     }
-
+*/
     .cardcontato{
 
         width: 60vw;
