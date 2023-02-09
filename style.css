@@ -9,6 +9,7 @@
 :root{
     /* Cores */
     --maincolor: #6b3136;
+    --maincolor-primary-1:#9C686D;
     --accent-color: #9b4e3f;
     --secondary-color: #E9EAE1;
     --dourado: #d1b351;
@@ -43,7 +44,7 @@ body {
 
 /*Imagem central*/
 .main-image {
-    height: 35vh;
+    height: 65vh;
     width: 100%; 
     position: relative; 
     overflow: hidden; 
@@ -181,7 +182,8 @@ header h1{
 
 .main h2 {
     font-size: 2.3em;
-    color: var(--dourado);
+    color: #eedc82 ;
+    
     padding: 5px;
     text-align: center;
     margin-bottom: 10px;
@@ -250,7 +252,7 @@ header h1{
     margin: 0 auto;
     text-align: center;
     margin-top: 0px;
-    padding: 30px 20px 50px 20px;
+    padding: 30px 2em 50px 2em;
     background-color: var(--light-gray-color);
     text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.24);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.212);
@@ -284,7 +286,6 @@ header h1{
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease-in-out
-    
   }
 
   .portfolio-image iframe {
@@ -305,49 +306,6 @@ header h1{
     height: 30em;
     
   }
-
-/*
-.portfolio-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-.portfolio-image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 40%;
-    margin: 0.5rem;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
-}
-
- 
- 
-
-
-  .video-iframe {
-    position: relative;
-    overflow: hidden;
-    width: 84%;
-    padding-top: 100.25%;
-    margin: 6%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
-  }
-
-  .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
-  */
 /*Contato*/
 .cardcontato {
     display: flex;
@@ -450,7 +408,7 @@ footer {
     background-color: var(--dark-gray-color);
     color: var(--BrancoPadrao);
     text-align: center;
-    margin-top: 8em;
+    margin-top: 2em;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -524,21 +482,10 @@ footer {
         height: 80vh;
         width: 100%;
     }
-   /* 
-    .portfolio-image {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 20%;
-        margin: 0.5rem;
-        height: auto;
-        transition: transform 0.3s ease-in-out;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
-    }
-*/
     .cardcontato{
 
         width: 60vw;
     }
+
 
 }
