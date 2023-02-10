@@ -226,7 +226,7 @@ header h1{
 
 .main a {
     text-decoration: none;
-    color: var(--maincolor);
+    color: #206812;
 }
 
 .main span:hover {
