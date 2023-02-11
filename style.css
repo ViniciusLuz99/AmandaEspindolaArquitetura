@@ -342,6 +342,7 @@ iframe {
  width: 20rem;
  height: 30em;
  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.123);
+ border: 1px solid var(--maincolor);
 }
 
 .instagram-button {
