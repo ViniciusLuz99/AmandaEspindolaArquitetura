@@ -261,6 +261,7 @@ header h1{
     border-bottom-right-radius: 10px;
     color: var(--dark-gray-color)
     
+    
 }
 
 .portfolio h3 {
@@ -308,10 +309,34 @@ header h1{
     width: 20rem;
     height: 30em;
     box-shadow: 1px 5px 5px  rgba(0, 0, 0, 0.123);
-    
+  }
+
+  .instagram-button {
+    background-color: #E4405F;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 3em;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 1px 5px 5px  rgba(0, 0, 0, 0.123);
+  }
+  
+  .instagram-button i {
+    margin-right: 10px;
+  }
+  
+  .instagram-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(228, 64, 95, 0.19), 0 6px 6px rgba(228, 64, 95, 0.23);
+    cursor: pointer;
   }
 /*Contato*/
 .cardcontato {
+    
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
@@ -323,6 +348,8 @@ header h1{
     max-width: 100vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
     background-image: linear-gradient(to right bottom, #622429, #64272b, #66292e, #672c30, #692e33, #692d32, #682d32, #682c31, #66292e, #64252a, #622227, #601e24);
+    
+    
 }
 
 .whatsapp:hover {
