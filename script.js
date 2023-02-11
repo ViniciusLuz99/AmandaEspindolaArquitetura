@@ -39,3 +39,19 @@ Se não, esconde o menu de navegação
     });
 
     
+
+    /* */
+    function scrollToTop() {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+        }
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.querySelector(".scrollToTop").style.display = "block";
+            } else {
+            document.querySelector(".scrollToTop").style.display = "none";
+            }
+            };
