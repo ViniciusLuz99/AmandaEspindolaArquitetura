@@ -634,7 +634,7 @@ footer a:hover {
  }
 
  .cardcontato {
-  width: 90vw;
+ max-width: 90%;
  }
 
  .portfolio-image {
@@ -660,7 +660,5 @@ footer a:hover {
   height: 80vh;
   width: 100%;
  }
- .cardcontato {
-  width: 60vw;
- }
+
 }
