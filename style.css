@@ -47,8 +47,7 @@ body {
     height: 65vh;
     width: 100%; 
     position: relative; 
-    overflow: hidden; 
-    
+    overflow: hidden;   
     background-size: cover;
     background-position: center;
     
@@ -63,7 +62,8 @@ body {
     object-fit: cover; 
 }
 
-.main-image, .main-container {
+.main-image, 
+.main-container {
     box-sizing: border-box;
 }
 
