@@ -49,7 +49,7 @@ Se não, esconde o menu de navegação
         }
 
         window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 510 || document.documentElement.scrollTop > 510) {
             document.querySelector(".scrollToTop").style.display = "block";
             } else {
             document.querySelector(".scrollToTop").style.display = "none";
