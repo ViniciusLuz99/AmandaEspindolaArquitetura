@@ -287,8 +287,7 @@ header h1{
     padding-bottom: 75%;
     overflow: hidden;
     position: relative;
-    transition: transform 0.3s ease-in-out;
-    
+    transition: transform 0.3s ease-in-out;   
   }
 
   .portfolio-image iframe {
