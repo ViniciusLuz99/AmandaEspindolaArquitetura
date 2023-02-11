@@ -286,7 +286,12 @@ header nav ul {
  text-align: center;
  margin-top: 0px;
  padding: 30px 2em 50px 2em;
- background-color: var(--light-gray-color);
+ background-image: linear-gradient(
+    to bottom,
+    var(--light-gray-color),
+    #eeeeee,
+    var(--light-gray-color)
+ );
  text-shadow: 1px 3px 3px rgba(17, 17, 17, 0.13);
  box-shadow: 1px 5px 33px rgba(0, 0, 0, 0.247);
  border-bottom-left-radius: 10px;
