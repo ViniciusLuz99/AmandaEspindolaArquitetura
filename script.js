@@ -24,6 +24,22 @@ function MenuHamburguer() {
     icon.classList.add('fa-times');
     }
     }
+
+
+    var links = document.querySelectorAll('#myLinks a');
+
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+            if (window.innerWidth < 770) {
+                var x = document.getElementById("myLinks");
+                var icon = document.querySelector('.icon i');
+                x.style.display = "none";
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+
 /**
 Adiciona um evento de redimensionamento à janela
 Verifica se o tamanho da janela é maior ou igual a 770px
