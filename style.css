@@ -494,22 +494,67 @@ a {
 
 /*Ródapé*/
 footer {
- background-color: var(--dark-gray-color);
- color: var(--BrancoPadrao);
- text-align: center;
- margin-top: 2em;
- padding: 20px;
- display: flex;
- align-items: center;
- justify-content: center;
-}
+   background-color: var(--dark-gray-color);
+   color: var(--BrancoPadrao);
+   padding: 10px;
+   min-height: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: .9em;
+ }
+ 
+ .footer-container {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ .developer{
+   font-size: .7em;
+ }
+ .footer-copyright {
+   text-align: left;
+   font-size: 1em;
+ }
+ 
+ .footer-copyright a{
+   text-align: left;
+   
+ }
 
-footer a:hover {
- transform: translateY(-3px);
- font-weight: bold;
- transition: 0.2s ease-in-out;
-}
+ .footer-social {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+ }
 
+ .footer-social a {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 26px;
+   background-color: var(--maincolor);
+   width: 40px;
+   height: 40px;
+   margin: 1px 5px;
+   border-radius: 50%;
+   transition: 0.2s ease-in-out;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+ }
+ 
+ footer a:hover {
+   transform: translateY(-3px);
+   font-weight: bold;
+   transition: 0.2s ease-in-out;
+ }
+
+ /**/
 /* botoes fixos direita */
 .bottom-right-icons {
  position: fixed;
@@ -660,6 +705,21 @@ footer a:hover {
   width: 30rem;
   height: 30em;
  }
+ .footer-container {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   max-width: 1200px;
+   ;
+ }
+ .footer-social {
+     display: flex;
+    margin-top: 9px;
+    flex-direction: row;
+    margin-right: 4em;
+}
 }
 
 /*Desktop*/
