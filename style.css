@@ -517,15 +517,10 @@ footer {
    font-size: .7em;
  }
  .footer-copyright {
-   text-align: left;
+   text-align: center;
    font-size: 1em;
  }
  
- .footer-copyright a{
-   text-align: left;
-   
- }
-
  .footer-social {
    display: flex;
    justify-content: center;
@@ -706,6 +701,7 @@ footer {
   height: 30em;
  }
  .footer-container {
+   text-align: left;
    display: flex;
    justify-content: space-between;
    flex-direction: row;
@@ -713,6 +709,11 @@ footer {
    width: 100%;
    max-width: 1200px;
    ;
+ }
+
+ .footer-copyright {
+   text-align: left;
+   font-size: 1em;
  }
  .footer-social {
      display: flex;
