@@ -13,8 +13,8 @@
  --accent-color: #9b4e3f;
  --secondary-color: #e9eae1;
  --dourado: #d1b351;
- --BrancoPadrao: #fff;
- --light-gray-color: #dfdfdf;
+ --BrancoPadrao: #ececec;
+ --light-gray-color: #F1ECE8;
  --dark-gray-color: #333333;
 
  /* Fontes */
@@ -37,7 +37,7 @@ body {
  margin: 0;
  padding: 0;
  width: 100%;
- background-image: linear-gradient(to bottom, #e9eae1, #a8a8a86e, #e9eae1);
+ background-image: linear-gradient(to bottom, var(--light-gray-color), var(--BrancoPadrao), var(--light-gray-color));
 }
 
 /*Imagem central*/
@@ -199,15 +199,15 @@ font-family: var(--primary-font);
  border-radius: 0px 0px 10px 10px;
  background-image: linear-gradient(
   to right bottom,
- var(--maincolor)
+ var(--light-gray-color)
  ,
- var(--maincolor-radient01)
+ var(--light-gray-color)
  );
 }
 
 .main h2 {
  font-size: 2.3em;
- color: #eedc82;
+ color: var(--maincolor);
  font-weight: light;
  padding: 5px;
  text-align: center;
@@ -217,6 +217,7 @@ font-family: var(--primary-font);
 }
 
 .main p {
+  color: #222;
  text-indent: 1px;
  font-size: 1.2em;
  text-align: left;
