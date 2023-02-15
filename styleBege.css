@@ -13,7 +13,7 @@
  --secondary-color: #e9eae1;
  --dourado: #d1b351;
  --BrancoPadrao: #fff;
- --light-gray-color: #e9e9e9;
+ --light-gray-color: #fceee9;
  --dark-gray-color: #333333;
  --Bordo: #6b3136;
  --Bordo-gradient01: ;
@@ -39,7 +39,7 @@ body {
  margin: 0;
  padding: 0;
  width: 100%;
- background-image: linear-gradient(to bottom, #e9eae1,  #e9eae1);
+ background-image: linear-gradient(to bottom, #fceee9,  #fceee9);
 }
 
 /*Imagem central*/
@@ -183,7 +183,7 @@ header nav ul {
  background-color: #04aa6d;
  color: white;
 }
-
+/* /*/
 .main-container {
  margin: 0 auto;
 }
@@ -249,24 +249,30 @@ background-color: var(--maincolor);
  box-shadow: 3px 10px 33px rgba(0, 0, 0, 0.336);
 }
 
-.main a {
- text-decoration: none;
- color: #009e3a;
-}
-
-.main span:hover {
- color: #25d365;
- transform: translateY(-3px);
- box-shadow: 0 10px 20px #1991453f, 0 6px 6px #25d36567;
- cursor: pointer;
- transition: 0.2s ease-in-out;
-}
 
 #contatobox {
- display: block;
- margin: 2em auto;
- padding: 0.8em;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, var(--Bordo), var(--Bordo));
+    color: #fff;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  #contatobox:hover {
+    transform: translateY(-5px);
+  }
+  
+  #contatobox i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    
+  }
+
 
 /*Portfólio*/
 
