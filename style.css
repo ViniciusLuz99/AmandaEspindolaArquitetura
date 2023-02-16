@@ -730,6 +730,7 @@ footer a:hover {
     height: 80vh;
     width: 100%;
   }
+  .cardfoto {
     display: flex;
     align-items: center;
     justify-content: center;
