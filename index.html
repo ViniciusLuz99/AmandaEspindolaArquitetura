@@ -1,151 +1,288 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arquiteta Amanda Espindola | Projetos de arquitetura únicos e exclusivos</title>
-  <meta name="description" content="Superamos as expectativas dos clientes, proporcionando a melhor experiência de projeto e materializando sonhos em moradia. Entre em contato para saber mais.">
-  <link rel="shortcut icon" href="./Imagens/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="styleBege.css"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap');
-  </style>
- </head>
- <body>
-  <header id="header">
-   <nav class="navbar">
-    <h1>Amanda Espindola</h1>
-    <div id="myLinks">
-     <ul>
-      <li>
-       <a href="#header">Home</a>
-      </li>
-      <li>
-       <a href="#sobre">Sobre</a>
-      </li>
-      <li>
-       <a href="#projetos">Projetos</a>
-      </li>
-      <li>
-       <a href="#contato">Contato</a>
-      </li>
-     </ul>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="MenuHamburguer()">
-     <i class="fa fa-bars"></i>
-    </a>
-   </nav>
-  </header>
-  <main>
-   <div class="main-image">  
-    <picture>
-      <source media="(min-width:1000px)" srcset="./Imagens/CentralDesktop.jpg">
-      <source media="(min-width:800px)" srcset="./Imagens/CentralMobile01.jpg">
-      <source media="(min-width:465px)" srcset="./Imagens/CentralMobile03.jpg">
-      <img src="./Imagens/CentralDesktop.jpg" alt="Foto de uma casa branca com piscina">
-    </picture>
-</div>
-   <div class="main-container">
-    <div class="main">
-     <div class="oquefazemos">
-       <h2>O que fazemos</h2>
-       <p> Superamos as expectativas dos clientes, proporcionando a melhor experiência de projeto, materializando sonhos em moradia. </p>
-       <p> Com nossa metodologia de projeto buscamos integração do ambiente natural com o construído. Valorizamos a contribuição ativa dos nossos clientes, junto a eles conseguimos criar projetos únicos e exclusivos que respondem as necessidades específicas.</p>
-     </div>
-     <hr>
-     <div class="sobre" id="sobre">
-      <h2>Sobre</h2>
-      <p>
-       <strong>Amanda Espindola</strong>
-       <br>formada em arquitetura e urbanismo pela Católica de Santa Catarina, atuou em escritórios de interiores, arquitetura e construtora, atendendo diversificados perfis de clientes, de minha casa minha vida, até residenciais de luxo.
-      </p>
-      <a href="https://wa.me/554896001850" target="_blank">
-       <span id="contatobox"><i class="fab fa-whatsapp"></i> Entre em contato</span>
-      </a>
-     </div>
-    </div>
-    <div class="portfolio" id="projetos">
-     <h3>Projetos em destaque</h3>
-     <p>Conheça algumas das nossas criações mais recentes:</p>
-     <div class="portfolio-images">
-       <iframe class="instagram-post" src="https://www.instagram.com/p/CoH16-Aoogj/embed" width="500" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-       
-       <iframe class="instagram-post" src="https://www.instagram.com/p/CoKc_1lstwW/embed" width="500" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Arquiteta Amanda Espindola | Projetos de arquitetura únicos e exclusivos
+    </title>
+    <meta
+      name="description"
+      content="Superamos as expectativas dos clientes, proporcionando a melhor experiência de projeto e materializando sonhos em moradia. Entre em contato para saber mais."
+    />
+    <link
+      rel="shortcut icon"
+      href="./Imagens/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <!--Logo-->
+        <h1>Amanda Espindola</h1>
+        <!--Navbar-->
+        <div id="myLinks">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#projetos">Projetos</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="MenuHamburguer()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
 
-       <iframe class="instagram-post" src="https://www.instagram.com/p/CoNtgTeh4Lu/embed" width="500" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-       
-       <iframe class="instagram-post" src="https://www.instagram.com/p/CoPpOZWrMp_/embed" width="500" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-       
-       <iframe class="instagram-post" src="https://www.instagram.com/p/CoYAdv6IL4S/embed" width="500" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+    <main id="home">
+      <!--Hero image que deu errado-->
+      <div class="main-image">
+        <picture>
+          <source
+            media="(min-width:1000px)"
+            srcset="./Imagens/CentralDesktop.jpg"
+          />
+          <source
+            media="(min-width:800px)"
+            srcset="./Imagens/CentralMobile01.jpg"
+          />
+          <source
+            media="(min-width:465px)"
+            srcset="./Imagens/CentralMobile03.jpg"
+          />
+          <img
+            src="./Imagens/CentralDesktop.jpg"
+            alt="Foto de uma casa branca com piscina"
+          />
+        </picture>
+      </div>
 
-      <iframe class="responsive-iframe"
-      width="720"
-      height="576"
-      src="https://www.youtube.com/embed/yBK3TymzYKg"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-     </iframe>
-     </div>
-     <a href="https://www.instagram.com/amandaespindola.arq/" target="_blank" class="instagram-button">
-      <i class="fab fa-instagram"></i>
-      Veja mais no Instagram
-    </a>
-    </div>
-    
-   </div>
-   <div class="cardcontato" id="contato">
-    <img class="cardfoto" src="./Imagens/d9cdbb8b-e66b-4f3a-93f0-86688789d75c.jfif" alt="Foto da Amanda">
-    <div class="info">
-     <h3>Amanda Espindola</h3>
-     <h4>Arquitetura</h4>
-     <h5>CAU A2803852</h5>
-     <p>
-      <a class="whatsapp" href="https://wa.me/554896001850" target="_blank">
-       <i class="fab fa-whatsapp"></i> 48 99600-1850 </a>
-     </p>
-     <p>
-      <a class="instagram" href="https://www.instagram.com/amandaespindola.arq/" target="_blank">
-       <i class="fab fa-instagram"></i> amandaespindola.arq </a>
-     </p>
-     <p>
-      <a class="email" href="mailto:amandaespindola.arq@gmail.com" target="_blank">
-       <i class="fas fa-envelope"></i> amandaespindola.arq@gmail.com </a>
-     </p>
-    </div>
-   </div>
-  </main>
-  <div class="bottom-right-icons">
-    <div class="whatsapp-icon">
-      <a href="https://wa.me/554896001850" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
-    <button onclick="scrollToTop()" class="scrollToTop">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-  </div>
-  <footer>
-    <div class="footer-container">
-      <div class="footer-copyright">
-        <p><a href="#home">Copyright &copy; Amanda Espindola 2023</a></p>
-        <a href="https://github.com/ViniciusLuz99" target="_blank" class="developer">Desenvolvido por ViniLuz99</a></p>
+      <div class="main-container">
+        <div class="main">
+          <!--Serviços(Aka "Oque Fazmos")-->
+          <div class="oquefazemos" id="sobre">
+            <h2>O que fazemos</h2>
+            <p>
+              Superamos as expectativas dos clientes, proporcionando a melhor
+              experiência de projeto, materializando sonhos em moradia.
+            </p>
+            <p>
+              Com nossa metodologia de projeto buscamos integração do ambiente
+              natural com o construído. Valorizamos a contribuição ativa dos
+              nossos clientes, junto a eles conseguimos criar projetos únicos e
+              exclusivos que respondem as necessidades específicas.
+            </p>
+          </div>
+
+          <hr />
+          <!--Sobre (about)-->
+          <div class="sobre">
+            <h2>Sobre</h2>
+            <p>
+              <strong>Amanda Espindola</strong>
+              <br />formada em arquitetura e urbanismo pela Católica de Santa
+              Catarina, atuou em escritórios de interiores, arquitetura e
+              construtora, atendendo diversificados perfis de clientes, de minha
+              casa minha vida, até residenciais de luxo.
+            </p>
+            <a href="https://wa.me/554896001850" target="_blank">
+              <span id="contatobox"
+                ><i class="fab fa-whatsapp"></i> Entre em contato</span
+              >
+            </a>
+          </div>
+        </div>
+        <!--Portfolio, baseado em posts do instagram-->
+        <div class="portfolio" id="projetos">
+          <h3>Projetos em destaque</h3>
+          <p>Conheça algumas das nossas criações mais recentes:</p>
+          <div class="portfolio-images">
+            <iframe
+              class="instagram-post"
+              src="https://www.instagram.com/p/CoH16-Aoogj/embed"
+              width="500"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true"
+            ></iframe>
+
+            <iframe
+              class="instagram-post"
+              src="https://www.instagram.com/p/CoKc_1lstwW/embed"
+              width="500"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true"
+            ></iframe>
+
+            <iframe
+              class="instagram-post"
+              src="https://www.instagram.com/p/CoNtgTeh4Lu/embed"
+              width="500"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true"
+            ></iframe>
+
+            <iframe
+              class="instagram-post"
+              src="https://www.instagram.com/p/CoPpOZWrMp_/embed"
+              width="500"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true"
+            ></iframe>
+
+            <iframe
+              class="instagram-post"
+              src="https://www.instagram.com/p/CoYAdv6IL4S/embed"
+              width="500"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              allowtransparency="true"
+            ></iframe>
+
+            <iframe
+              class="responsive-iframe"
+              width="720"
+              height="576"
+              src="https://www.youtube.com/embed/yBK3TymzYKg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <a
+            href="https://www.instagram.com/amandaespindola.arq/"
+            target="_blank"
+            class="instagram-button"
+          >
+            <i class="fab fa-instagram"></i>
+            Veja mais no Instagram
+          </a>
+        </div>
       </div>
-      <div class="footer-social">
-        <a class="whatsapp" href="https://wa.me/554896001850" target="_blank">
-          <i class="fab fa-whatsapp"></i></a>
-        <a class="instagram" href="https://www.instagram.com/amandaespindola.arq/" target="_blank">
-          <i class="fab fa-instagram"></i></a>
-        <a class="email" href="mailto:amandaespindola.arq@gmail.com" target="_blank">
-          <i class="fas fa-envelope"></i></a>
+      <!--Profile card UI, aqui fica foto, redes e info-->
+      <div class="cardcontato" id="contato">
+        <img
+          class="cardfoto"
+          src="./Imagens/d9cdbb8b-e66b-4f3a-93f0-86688789d75c.jfif"
+          alt="Foto da Amanda"
+        />
+        <div class="info">
+          <h3>Amanda Espindola</h3>
+          <h4>Arquitetura</h4>
+          <h5>CAU A2803852</h5>
+          <p>
+            <a
+              class="whatsapp"
+              href="https://wa.me/554896001850"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i> 48 99600-1850
+            </a>
+          </p>
+          <p>
+            <a
+              class="instagram"
+              href="https://www.instagram.com/amandaespindola.arq/"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i> amandaespindola.arq
+            </a>
+          </p>
+          <p>
+            <a
+              class="email"
+              href="mailto:amandaespindola.arq@gmail.com"
+              target="_blank"
+            >
+              <i class="fas fa-envelope"></i> amandaespindola.arq@gmail.com
+            </a>
+          </p>
+        </div>
       </div>
+    </main>
+
+    <!--Botões do lado direito(aka zapzap e seta de "topo")-->
+    <div class="bottom-right-icons">
+      <!--Zapzap-->
+      <div class="whatsapp-icon">
+        <a href="https://wa.me/554896001850" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      <!--Botao retorno ao topo-->
+      <button onclick="scrollToTop()" class="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+      </button>
     </div>
-  </footer>
-  <script src="script.js"></script>
- </body>
+
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-copyright">
+          <p><a href="#home">Copyright &copy; Amanda Espindola 2023</a></p>
+          <p>
+            <a
+              href="https://github.com/ViniciusLuz99"
+              target="_blank"
+              class="developer"
+              >Desenvolvido por ViniLuz99</a
+            >
+          </p>
+        </div>
+        <div class="footer-social">
+          <a class="whatsapp" href="https://wa.me/554896001850" target="_blank">
+            <i class="fab fa-whatsapp"></i
+          ></a>
+          <a
+            class="instagram"
+            href="https://www.instagram.com/amandaespindola.arq/"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="email"
+            href="mailto:amandaespindola.arq@gmail.com"
+            target="_blank"
+          >
+            <i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
